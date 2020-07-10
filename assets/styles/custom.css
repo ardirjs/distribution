@@ -1,0 +1,33 @@
+/*
+ * hide effect
+-*/
+
+.hide-effect:hover,.hide-effect:focus,.hide-effect:active,
+.hide-effect:active:focus:not(:disabled):not(.disabled),
+.btn:focus, .btn:active, .btn:hover,
+.hide-effect:focus ~ .hide-effect::before {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+/*
+ * underline
+-*/
+
+.underline-prepend {
+	display: inline-block;
+}
+.underline-prepend:after {
+	content: "";
+	display: block;
+	margin: .35rem 0 0 0;
+	border: .15rem solid #6c757d;
+  border-radius: 0 1rem 0 0;
+}
+hr.underline {
+  margin: -.55rem 0 .5rem 0;
+	height: .025rem;
+  border: .15rem solid #6c757d;
+  border-radius: 0 1rem 0 0;
+}
